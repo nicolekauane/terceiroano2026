@@ -1,104 +1,281 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfólio React Native</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ana Devs · Portfólio React Native</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="container">
-
 <header>
-
-<h1>🌸 Meus Projetos</h1>
-
-<p>Portfólio de aplicativos desenvolvidos em React Native</p>
-
+  <nav class="wrap">
+    <a href="#top" class="logo"><span></span> ana.dev</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="navLinks">
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#processo">Como trabalho</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <a href="#contato" class="nav-cta">Vamos conversar</a>
+  </nav>
 </header>
 
-<section class="projetos">
+<main id="top">
 
-<div class="card">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Desenvolvedora React Native</span>
+        <h1>Eu transformo ideias em <em>apps</em> que cabem na palma da mão.</h1>
+        <p class="lead">Oi, eu sou a Ana! Construo aplicativos mobile bonitos, rápidos e fáceis de usar — do wireframe até a loja de aplicativos. Aqui embaixo estão alguns projetos que fiz com muito carinho (e bastante café).</p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn-primary">Ver projetos ✦</a>
+          <a href="#contato" class="btn-secondary">Fale comigo</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>12+</strong><span>Apps publicados</span></div>
+          <div><strong>4</strong><span>Anos de experiência</span></div>
+          <div><strong>98%</strong><span>Clientes satisfeitos</span></div>
+        </div>
+      </div>
 
-<div class="icone">
-<i class="fa-solid fa-mobile-screen-button"></i>
-</div>
+      <div class="phone-stage">
+        <div class="blob"></div>
+        <div class="phone phone-a">
+          <div class="screen-block">
+            <div class="dot-row"><i></i><i></i><i></i></div>
+            <div class="bar"></div>
+            <div class="bar short"></div>
+            <div class="card-mini">
+              <div class="bar" style="background:rgba(122,46,74,0.4)"></div>
+              <div class="bar short" style="background:rgba(122,46,74,0.4)"></div>
+            </div>
+            <span class="pill">to-do.app</span>
+          </div>
+        </div>
+        <div class="phone phone-b">
+          <div class="screen-block">
+            <div class="dot-row"><i></i><i></i><i></i></div>
+            <div class="bar"></div>
+            <div class="bar short"></div>
+            <div class="card-mini">
+              <div class="bar" style="background:rgba(110,158,133,0.5)"></div>
+            </div>
+            <span class="pill">fit.app</span>
+          </div>
+        </div>
+        <div class="phone phone-c">
+          <div class="screen-block">
+            <div class="dot-row"><i style="background:rgba(251,234,240,0.5)"></i><i style="background:rgba(251,234,240,0.5)"></i><i style="background:rgba(251,234,240,0.5)"></i></div>
+            <div class="bar" style="background:rgba(251,234,240,0.35)"></div>
+            <div class="bar short" style="background:rgba(251,234,240,0.35)"></div>
+            <div class="card-mini" style="background:rgba(251,234,240,0.12)">
+              <div class="bar" style="background:rgba(251,234,240,0.4)"></div>
+            </div>
+            <span class="pill" style="background:rgba(251,234,240,0.2); color:#FBEAF0 !important;">shop.app</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h2>Projeto 01</h2>
+  <!-- ABOUT / STACK -->
+  <section class="about" id="sobre">
+    <div class="wrap about-grid">
+      <div>
+        <span class="eyebrow">Sobre mim</span>
+        <h2 style="margin-top:14px; font-size:2rem;">Código com propósito, design com afeto.</h2>
+      </div>
+      <div>
+        <p>Sou desenvolvedora mobile especializada em <strong>React Native</strong> e <strong>Expo</strong>, com foco em interfaces que parecem simples — mesmo quando por trás existe muita lógica cuidadosa. Gosto de projetos que unem estética e usabilidade, sempre pensando em quem vai usar o app no dia a dia.</p>
+        <p>Essas são as ferramentas que uso com mais carinho no meu fluxo de trabalho:</p>
+        <ul class="stack-list">
+          <li>React Native</li>
+          <li>Expo</li>
+          <li>TypeScript</li>
+          <li>Redux Toolkit</li>
+          <li>Zustand</li>
+          <li>Firebase</li>
+          <li>REST & GraphQL</li>
+          <li>Figma</li>
+          <li>NativeWind</li>
+          <li>Jest</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<p>Aplicativo em desenvolvimento.</p>
+  <!-- PROJECTS -->
+  <section id="projetos">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Portfólio</span>
+        <h2>Projetos React Native</h2>
+        <p>Uma seleção de apps que desenvolvi — de MVPs para startups a apps pessoais publicados na loja. Clique nos filtros pra explorar por tecnologia.</p>
+      </div>
 
-<a href="#" class="botao">
-Abrir Projeto
-</a>
+      <div class="filter-row" id="filterRow">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="expo">Expo</button>
+        <button class="filter-btn" data-filter="firebase">Firebase</button>
+        <button class="filter-btn" data-filter="typescript">TypeScript</button>
+      </div>
 
-</div>
+      <div class="projects-grid" id="projectsGrid">
 
-<div class="card">
+        <article class="project-card" data-tags="expo firebase typescript">
+          <div class="mini-phone"><div class="fill" style="background:linear-gradient(160deg,#FBE0EA,#F4C2D7)"></div></div>
+          <div class="project-body">
+            <span class="role">App de produtividade</span>
+            <h3>Florescer</h3>
+            <p class="desc">App de hábitos e bem-estar com lembretes gentis, streaks visuais e sincronização em nuvem para acompanhar sua rotina de autocuidado.</p>
+            <div class="tags"><span>React Native</span><span>Expo</span><span>Firebase</span></div>
+            <div class="project-links">
+              <a href="#">Ver projeto →</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </article>
 
-<div class="icone">
-<i class="fa-solid fa-heart"></i>
-</div>
+        <article class="project-card" data-tags="typescript">
+          <div class="mini-phone"><div class="fill" style="background:linear-gradient(160deg,#DCEEE3,#AFD4C0)"></div></div>
+          <div class="project-body">
+            <span class="role">App fitness</span>
+            <h3>Pulse Fit</h3>
+            <p class="desc">Treinos personalizados com temporizador integrado, histórico de progresso e gráficos de evolução construídos com Reanimated.</p>
+            <div class="tags"><span>React Native</span><span>TypeScript</span><span>Reanimated</span></div>
+            <div class="project-links">
+              <a href="#">Ver projeto →</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </article>
 
-<h2>Projeto 02</h2>
+        <article class="project-card" data-tags="expo">
+          <div class="mini-phone"><div class="fill" style="background:linear-gradient(160deg,#7A2E4A,#5A2038)"></div></div>
+          <div class="project-body">
+            <span class="role">E-commerce</span>
+            <h3>Boutique</h3>
+            <p class="desc">Loja mobile completa com carrinho, checkout e favoritos, feita com Expo Router e animações suaves de transição entre telas.</p>
+            <div class="tags"><span>React Native</span><span>Expo Router</span><span>Stripe</span></div>
+            <div class="project-links">
+              <a href="#">Ver projeto →</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </article>
 
-<p>Aplicativo em desenvolvimento.</p>
+        <article class="project-card" data-tags="firebase typescript">
+          <div class="mini-phone"><div class="fill" style="background:linear-gradient(160deg,#F4C2D7,#E8A0BC)"></div></div>
+          <div class="project-body">
+            <span class="role">Social app</span>
+            <h3>Cartinha</h3>
+            <p class="desc">Rede social para troca de cartas e mensagens ilustradas entre amigas, com chat em tempo real e notificações push.</p>
+            <div class="tags"><span>React Native</span><span>Firebase</span><span>TypeScript</span></div>
+            <div class="project-links">
+              <a href="#">Ver projeto →</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </article>
 
-<a href="#" class="botao">
-Abrir Projeto
-</a>
+        <article class="project-card" data-tags="expo firebase">
+          <div class="mini-phone"><div class="fill" style="background:linear-gradient(160deg,#AFD4C0,#6E9E85)"></div></div>
+          <div class="project-body">
+            <span class="role">Organização</span>
+            <h3>Ninho</h3>
+            <p class="desc">App de planejamento financeiro para casais, com metas compartilhadas e visualização de gastos em gráficos delicados.</p>
+            <div class="tags"><span>React Native</span><span>Expo</span><span>Victory Native</span></div>
+            <div class="project-links">
+              <a href="#">Ver projeto →</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </article>
 
-</div>
+        <article class="project-card" data-tags="typescript firebase">
+          <div class="mini-phone"><div class="fill" style="background:linear-gradient(160deg,#FBE0EA,#AFD4C0)"></div></div>
+          <div class="project-body">
+            <span class="role">Utilitário</span>
+            <h3>Água Viva</h3>
+            <p class="desc">Lembrete de hidratação com widget nativo, animações fluidas de "onda" e integração com Apple Health / Google Fit.</p>
+            <div class="tags"><span>React Native</span><span>TypeScript</span><span>Firebase</span></div>
+            <div class="project-links">
+              <a href="#">Ver projeto →</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </article>
 
-<div class="card">
+      </div>
+    </div>
+  </section>
 
-<div class="icone">
-<i class="fa-solid fa-palette"></i>
-</div>
+  <!-- PROCESS -->
+  <section class="process" id="processo">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Como eu trabalho</span>
+        <h2>Do rascunho à loja de apps</h2>
+      </div>
+      <div class="process-row">
+        <div class="process-step">
+          <span class="num">01</span>
+          <h3>Descoberta</h3>
+          <p>Entendo o problema, o público e o objetivo do app antes de abrir o Figma.</p>
+        </div>
+        <div class="process-step">
+          <span class="num">02</span>
+          <h3>Design</h3>
+          <p>Wireframes e protótipos navegáveis, com atenção especial à experiência mobile.</p>
+        </div>
+        <div class="process-step">
+          <span class="num">03</span>
+          <h3>Desenvolvimento</h3>
+          <p>Código limpo em React Native, componentizado, testado e documentado.</p>
+        </div>
+        <div class="process-step">
+          <span class="num">04</span>
+          <h3>Publicação</h3>
+          <p>Build, testes em dispositivos reais e envio para App Store e Play Store.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h2>Projeto 03</h2>
+  <!-- CONTACT -->
+  <section id="contato">
+    <div class="wrap">
+      <div class="contact-card">
+        <div>
+          <h2>Tem um app em mente?</h2>
+          <p>Vamos transformar sua ideia em um aplicativo de verdade. Me manda uma mensagem e conta um pouquinho sobre o projeto.</p>
+        </div>
+        <a href="mailto:oi@anadevs.com" class="contact-btn">oi@anadevs.com ✦</a>
+      </div>
+    </div>
+  </section>
 
-<p>Aplicativo em desenvolvimento.</p>
-
-<a href="#" class="botao">
-Abrir Projeto
-</a>
-
-</div>
-
-<div class="card">
-
-<div class="icone">
-<i class="fa-solid fa-star"></i>
-</div>
-
-<h2>Projeto 04</h2>
-
-<p>Aplicativo em desenvolvimento.</p>
-
-<a href="#" class="botao">
-Abrir Projeto
-</a>
-
-</div>
-
-</section>
+</main>
 
 <footer>
-
-♡ Desenvolvido por Nicole Mueller
-
+  <div class="wrap">
+    <div class="socials">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+    <p>feito com React Native (e muito carinho) · © 2026 ana.dev</p>
+  </div>
 </footer>
 
-</div>
+<script src="script.js"></script>
 
 </body>
-
 </html>
